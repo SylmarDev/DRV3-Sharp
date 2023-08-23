@@ -1,12 +1,31 @@
-# DRV3-Sharp: A tool and library for working with various formats from Danganronpa V3 for PC (PS Vita/PS4 are not fully supported!)
+# DRV3-Sharp
+DRV3-Sharp is a tool and library for working with various formats from Danganronpa V3 for PC (PS Vita/PS4 are not fully supported!). These tools are currently run from the command line, such as Windows Command Prompt, PowerShell, or the Linux/Unix/macOS terminal of your choice. This is planned to change to be a GUI interface that's more user-friendly.
 
-## How do I use these tools?
-These tools are intended to be run from the command line, such as Windows Command Prompt, PowerShell, or the Linux/Unix/macOS terminal of your choice.
+## Downloading the Prebuilt Version
+These tools are in a constant state of rewrites and adjustments, so I currently do not provide pre-built copies via GitHub's "Releases" section right now. These builds are unstable and probably have bugs. If you would like to check out the latest builds without building locally, follow these steps:
 
-## Where can I obtain pre-built copies of these tools to run?
-These tools are in a constant state of rewrites and adjustments, so I currently do not provide pre-built copies via GitHub's "Releases" section, since they would most likely be missing features or have serious bugs. However, if you would like to check out the latest builds and are viewing a commit that was pushed within the last month, you can click the green checkmark next to that commit and select "Details", and then select "Artifacts" on the page that appears, to download an automated build on AppVeyor.
+1. View commits. You can do this by scrolling to the top of the page, and clicking the option in the top right that says "x commits"
+2. Find a recent commit, within the past month, and click the green checkmark
+3. Click off to the side where the new pop-up says "Details"
+4. This will take you to the appveyor site for this build. On the right side of the screen, click "Artifacts". If there isn't an artifact present, try  with an older commit
+5. Click on the generated zip archive. Extract it with your favorite unzipping software
+6. Run DRV3-Sharp.exe. Congratulations, you're running DRV3-Sharp
 
-If you'd like to build the code, you'll need Visual Studio Code, Microsoft Visual Studio 2022 if you're using Windows, JetBrains Rider for Windows, Linux, or macOS, or the command-line `dotnet` SDK if you're familiar with how to use that. This project uses .NET 7.0 and should be relatively cross-platform, but the "Scarlet" libraries it depends on are currently only built for Windows. However, that repository is also available on my GitHub, and should be able to build on your platform of choice and linked into the DRV3-Sharp project once complete.
+## Building Locally
+### Prerequistes
+- Visual Studio 2022
+- Dotnet SDK
+
+### Steps
+1. Open the DRV3-Sharp repo in Visual Studio 2022 (or your IDE of choice)
+2. In a terminal/powershell window, navigate to the project directory (if you aren't there already) and run `dotnet --version`
+3. Ensure your dotnet version is .NET 7.0. (It can be newer, but then you run the risk of breaking changes)
+4. To build a local copy, run `dotnet build`
+5. To run in visual studio, select `DRV3-Sharp.csproj` as your target
+6. Click run. The project should launch.
+
+### Troubleshooting
+Building on other platforms is currently not strictly supported because the Scarlet libraries are only built for Windows. However, you should be able to build them from [this repo](https://github.com/CaptainSwag101/Scarlet) and import them to this project and be able to build locally.
 
 ## Why don't you provide any instructions on how to use these tools?
 Well... frankly, it's because I'm constantly rewriting these tools and have changed how they work drastically several times. These tools are by no means stable yet (I've just completed the second major overhaul of the codebase as I write this, which COMPLETELY changed how the project is structured and how the program will be invoked), so I can't easily provide a good guide for other people to use them when I myself still haven't decided on how they should be used. That said, now that this overhaul is done, I feel rather pleased with how the project is shaping up, so hopefully I won't need to make any major design overhauls in the future, and can start to work on documenting things better. Overall, the program should be very easy to interact with: just use your arrow keys, the Enter key, and the Spacebar for multi-item selection (where applicable).
