@@ -20,12 +20,18 @@ These tools are in a constant state of rewrites and adjustments, so I currently 
 1. Open the DRV3-Sharp repo in Visual Studio 2022 (or your IDE of choice)
 2. In a terminal/powershell window, navigate to the project directory (if you aren't there already) and run `dotnet --version`
 3. Ensure your dotnet version is .NET 7.0. (It can be newer, but then you run the risk of breaking changes)
-4. To build a local copy, run `dotnet build`
-5. To run in visual studio, select `DRV3-Sharp.csproj` as your target
-6. Click run. The project should launch.
+4. ***To build a local copy***, run `dotnet build`
+5. ***To run in visual studio***, select `DRV3-Sharp.csproj` as your target
+6. Click run. The project should launch
 
 ### Troubleshooting
 Building on other platforms is currently not strictly supported because the Scarlet libraries are only built for Windows. However, you should be able to build them from [this repo](https://github.com/CaptainSwag101/Scarlet) and import them to this project and be able to build locally.
+
+## User's Manual
+Read the [User's Manual](usersManual.md) if you're lost.
+
+## Documentation
+>TODO
 
 ## Why don't you provide any instructions on how to use these tools?
 Well... frankly, it's because I'm constantly rewriting these tools and have changed how they work drastically several times. These tools are by no means stable yet (I've just completed the second major overhaul of the codebase as I write this, which COMPLETELY changed how the project is structured and how the program will be invoked), so I can't easily provide a good guide for other people to use them when I myself still haven't decided on how they should be used. That said, now that this overhaul is done, I feel rather pleased with how the project is shaping up, so hopefully I won't need to make any major design overhauls in the future, and can start to work on documenting things better. Overall, the program should be very easy to interact with: just use your arrow keys, the Enter key, and the Spacebar for multi-item selection (where applicable).
