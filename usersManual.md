@@ -24,7 +24,7 @@ To start, navigate to your Danganronpa V3 installation. (PS4 and PS Vita install
 
 ``steam folder/steamapps/common/Danganronpa V3 Killing Harmony/data/win``
 
-There you'll see three .CPK files. These are the outer layer archive format, and store all of the games data. The following breaks down what all they contain (see [file tree](#file-tree)). **I'd recommend backing these files up to avoid having to reinstall.**
+There you'll see three .CPK files. These are the outer layer archive format, and store all of the games data. The [file tree](#file-tree) breaks down what all they contain, if you're looking for something specific. **I'd recommend backing up these files up to avoid having to reinstall.**
 
 I'd recommend to make a folder on its own, far from your DRV3 installation directory to play with and dig through DRV3's files, but  do what you like.
 
@@ -94,4 +94,30 @@ This is the breakdown of files in the game's files, so if you're looking for som
         - criwave.srd contains a .tga file of the Criware opening credit
         - nisa.srd contains a .tga file of the NIS America opening credit
   - game_resident
+    - adv_resident.spc
+    - ainori_resident.spc
+    - e01_resident.spc
+    - e02_resident.spc
+    - e03_resident.spc
+    - e04_resident.spc
+    - e05_resident.spc
+    - e06_resident.spc
+    - epilogue_resident.spc
+      - files from adv_resident to epilogue_resident only contain one .acb file that stores game information related to each chapter of the game
+    - game_resident.spc
+    - game_resident_US.spc
+      - contains specific localization information for the US
+    - minigame_resident
+    - minigame_resident_ENG
+    - prologue_resident
+      - matches with epilogue and episodes resident files
+    - rsc_resident
+    - trial_resident
+    - voice_resident
+    - voice_resident_ENG
   - sound
+    - *Contains all bgm from the game as .vis and jingles and sound for opening movies. It also contains two voice files that presumably have voice acting files*
+    - BGM.awb
+    - JINGLE.awb
+    - MOVIE.awb
+    - V3_BGM_000_OP.vis

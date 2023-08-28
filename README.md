@@ -28,7 +28,7 @@ These tools are in a constant state of rewrites and adjustments, so I currently 
 Building on other platforms is currently not strictly supported because the Scarlet libraries are only built for Windows. However, you should be able to build them from [this repo](https://github.com/CaptainSwag101/Scarlet) and import them to this project and be able to build locally.
 
 ## [User's Manual](usersManual.md)
-Read the [User's Manual](usersManual.md) if you'd like more information on DRV3's file formats and how to use DRV3-Sharp to the fullest.
+Read the [User's Manual](usersManual.md) if you'd like more information on DRV3's file formats, the file storage layout, and how to use DRV3-Sharp to the fullest.
 
 ## [OUTDATED] Why don't you provide any instructions on how to use these tools?
 *Kept these here for transparency's sake, there's good info here even if there are now instructions on how to use these*
