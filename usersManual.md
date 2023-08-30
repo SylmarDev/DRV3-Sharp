@@ -1,6 +1,6 @@
 # User's Manual for DRV3-Sharp
 
-*TODO: Finish File Format Explanations, flesh out File Tree*
+*TODO: Finish File Format Explanations*
 
 ## Table of Contents
 - [Getting Started](#getting-started)
@@ -26,7 +26,7 @@ To start, navigate to your Danganronpa V3 installation. (PS4 and PS Vita install
 
 There you'll see three .CPK files. These are the outer layer archive format, and store all of the games data. The [file tree](#file-tree) breaks down what all they contain, if you're looking for something specific. **I'd recommend backing up these files up to avoid having to reinstall.**
 
-I'd recommend to make a folder on its own, far from your DRV3 installation directory to play with and dig through DRV3's files, but  do what you like.
+I'd recommend to make a folder on its own, far from your DRV3 installation directory to play with and dig through DRV3's files, but do what you like.
 
 To extract these files, in DRV3-Sharp, navigate to Select File Type > CPK > Extract CPK. You'll be prompted to type a path or drag and drop them into your window.
 
@@ -35,7 +35,7 @@ Once you've given a path or dragged and dropped, *in the same directory as the f
 
 ## File Formats
 ### CPK
-CPK files are the outer layer archive format, and store all the game data. All of the following file formats are sub-formats to CPK files.
+CPK files are the outer layer archive format, and store all the game data. All of the following formats are found within the CPK archive.
 
 ### SPC
 SPC files are the most common data archive format DRV3 uses.
@@ -65,7 +65,7 @@ WRD Files...
 ---
 
 ## File Tree
-This is the breakdown of files in the game's files, so if you're looking for something specific you can probably trace it through here. It should hopefully be a good resource if you're new to V3's file structure. Files that can't be parsed and .sfl's will be ignored for brevity's sake. Where there are different localiztaions of SRD files, the US localization's files will be listed. This is currently unfinished, because of the work involved but feel free to look around yourself with DRV3-Tools.
+This is the breakdown of files in the game's files, so if you're looking for something specific you can probably trace it through here. It should hopefully be a good resource if you're new to V3's file structure. Files that can't be parsed and .sfl's will be ignored for brevity's sake. Where there are different localiztaions of SRD files, the US localization's files will be listed. This is currently unfinished, because of the work involved but feel free to look around yourself.
 
 - partition_data_win.cpk
   - flash
